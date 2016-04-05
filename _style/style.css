@@ -8,6 +8,8 @@ html {
 	text-align: center;
 }
 
+*, *:before, *:after { box-sizing: inherit; }
+
 h2  {
 	margin:0;
 	padding:0.5em;
@@ -16,17 +18,13 @@ h2  {
 	font-size:2.5em;
 }
 
+/*TODO add highlight color (currently default blue)*/
+
 .content {
 	width:70%;
 	margin:0 auto;
 }
 
-.bizcard {
-	width:100%;
-	padding:32rem 0 10rem 0;
-	margin:0;
-	text-align: center;
-}
 
 .bizcard__name {
 	margin:0.5rem auto;
@@ -84,14 +82,6 @@ h2  {
 }
 
 
-.about {
-	padding:34rem 0 10rem 0; 
-	margin:0;
-
-}
-
-
-
 .about__text{
 	margin:0;
 	padding:0.75em;
@@ -106,14 +96,6 @@ h2  {
 	color: #ddd;
 	text-align: left;
 }
-
-.projects{
-	padding:32rem 0 10rem 0;
-	margin:0;
-}
-
-
-
 
 
 .projects__ss {
@@ -137,7 +119,11 @@ h2  {
 	}
 }
 
-.connect{
-	padding:40rem 0 10rem 0;
-	margin:0;
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height:100vh;
+	padding-bottom:5rem;
 }
