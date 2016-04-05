@@ -1,0 +1,143 @@
+html {
+	margin:0;
+	padding:0;
+	width:100%;
+	background: url(../_images/pine_rock_grad2.jpg) no-repeat center center fixed;
+	background-size: cover;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+h2  {
+	margin:0;
+	padding:0.5em;
+/*	color:#00042b;*/
+	font-family: "Lobster Two",cursive;
+	font-size:2.5em;
+}
+
+.content {
+	width:70%;
+	margin:0 auto;
+}
+
+.bizcard {
+	width:100%;
+	padding:32rem 0 10rem 0;
+	margin:0;
+	text-align: center;
+}
+
+.bizcard__name {
+	margin:0.5rem auto;
+	padding:1rem;
+	font-size:8em;
+	font-family:"Wire One",sans-serif;
+	color:#eee;
+	font-weight: 400;
+	line-height: 0.75em;
+}
+
+.bizcard__title {
+	margin:0.5rem 0;
+	font-size:2em;
+	color:#d9b97d;
+	line-height: 0.75em;
+	letter-spacing: 0.1em;
+	font-family: "Slabo 27px", sans-serif;
+}
+
+.nav{
+	margin:0;
+	padding:0;
+}
+.nav li {
+	margin:1em;
+	padding:0;
+	display:inline;
+
+}
+
+.nav a {
+	text-decoration: none;
+	color:#98be75;
+	font-family: "Wire One", sans-serif;
+	font-weight: 700;
+	font-size:2.5em;
+	text-transform: lowercase;
+}
+
+.active a {
+	font-family: "Playfair Display", sans-serif;
+	font-size: 3em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.caps-emph {
+	font-family:"Playfair Display",sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 400;
+
+}
+
+
+.about {
+	padding:34rem 0 10rem 0; 
+	margin:0;
+
+}
+
+
+
+.about__text{
+	margin:0;
+	padding:0.75em;
+/*	font-family: "Wire One", sans-serif;
+	font-size: 3em;
+	font-weight: 400;
+	color: #eee;*/
+	font-family: "Slabo 27px", sans-serif;
+	font-size: 1.75em;
+	letter-spacing: 0.1em;
+	font-weight: 200;
+	color: #ddd;
+	text-align: left;
+}
+
+.projects{
+	padding:32rem 0 10rem 0;
+	margin:0;
+}
+
+
+
+
+
+.projects__ss {
+	width:25%;
+	margin:2%;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'0.0 \'/></filter></svg>#grayscale");
+   filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Google Chrome, Safari 6+ & Opera 15+ */
+ 	display: inline-block;
+
+}
+
+.projects__ss:hover {
+	filter:none;
+	-webkit-filter: none;
+
+}
+
+@media only screen and (max-width: 950px){
+	.projects__ss {
+	}
+}
+
+.connect{
+	padding:40rem 0 10rem 0;
+	margin:0;
+}
