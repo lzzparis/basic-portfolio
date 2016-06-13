@@ -102,10 +102,6 @@ p::selection {
 .about__text{
 	margin:0;
 	padding:0.75em 0 0 0 ;
-/*	font-family: "Wire One", sans-serif;
-	font-size: 3em;
-	font-weight: 400;
-	color: #eee;*/
 	font-family: "Slabo 27px", sans-serif;
 	font-size: 1.75em;
 	letter-spacing: 0.1em;
@@ -116,14 +112,46 @@ p::selection {
 
 
 .projects__ss {
-	width:20%;
-	padding:2%;
+	width:100%;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'0.0 \'/></filter></svg>#grayscale");
    filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(100%); /* Google Chrome, Safari 6+ & Opera 15+ */
- 	display: inline-block;
+ 	float:left;
 
 }
+
+.projects__carousel{
+	position:relative;
+	width:100%;
+}
+
+.projects__carousel .arrow{
+	position:absolute;
+	font-size:3rem;
+	padding:.5rem;
+	width:4rem;
+	color:#fff;
+}
+
+.left {
+	left:0;
+}
+
+.right{
+	right:0;
+}
+.projects__carousel__list{
+	list-style: none;
+	margin:0 auto;	
+	width:90%;
+}
+.projects__carousel__list li{
+	width:20%;
+	padding:1%;
+	display: inline-block;
+	float:left;
+}
+
 
 .projects__ss:hover {
 	filter:none;
@@ -162,7 +190,7 @@ p::selection {
 
 @media only screen and (max-width: 1001px){
 
-	.projects__ss{
+	.projects__carousel li{
 		width:40%;
 	}
 
